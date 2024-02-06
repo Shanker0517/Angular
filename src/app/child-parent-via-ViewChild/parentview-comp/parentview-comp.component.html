@@ -1,0 +1,6 @@
+<app-childview-comp></app-childview-comp>
+<input type="number" name="input1" (input)="onchange($event)" [(ngModel)]="input1"/>
+<input type="number" name="input2" (input)="onchange($event)" [(ngModel)]="input2"/>
+<button (click)="addNumbers(input1,input2)">Add</button>
+<button (click)="subNumbers(input1,input2)">Substract</button>
+

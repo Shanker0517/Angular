@@ -1,0 +1,13 @@
+<!-- <app-childtoparentParent
+  (addNewItem)="addItem($event)"
+></app-childtoparentParent> -->
+
+<app-childtoparentChild
+  (newitem)="addItem($event)"
+></app-childtoparentChild>
+
+<ul>
+  <li *ngFor="let item of items">
+    {{ item }}
+  </li>
+</ul>
